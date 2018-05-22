@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Layout</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="https://fonts.googleapis.com/css?family=Handlee|Shrikhand" rel="stylesheet">
+<style>
+*{box-sizing: border-box;}
+
+body{
+    padding: 10px;
+	background: white url('a.jpg')0 0/1600px auto fixed;
+	font-family: 'Handlee', cursive;
+	font-size: 1.2em;
+	line-height: 1.8em;
+
+}
+
+.container{
+	width: 1200px;
+	min-height: 500px;
+	margin: 0 auto;
+	border: 1px solid black;
+	display: table;
+}
+
+section{
+	width: 100%;
+	min-height: 200px;
+    clear: both;
+	display: table;
+}
+
+.column{
+	float: left;
+    min-height: 200px;
+	margin-bottom: -12px;
+}
+
+.col2{
+	width: 50%;
+}
+
+.col3{
+	width: 33.3333%;
+}
+
+.col32{
+	width: 66.66%;
+}
+
+.col4{
+	width: 25%;
+}
+
+.col43{
+	width: 75%;
+}
+
+.col5{
+	width: 20%;
+}
+
+.col54{
+	width: 80%;
+}
+
+header{
+	width: 100%;
+	min-height: 200px;
+	background: rgba(0, 0, 0,0.8);
+	clear: both;
+	padding: 20px;
+	
+}
+
+header h1{
+	font-size: 3em;
+	display: inline-block;
+	padding: 10px;
+	text-align: center;
+	font-family: 'Handlee', cursive;
+	font-size: 4em;
+	color: #95DAF8;
+}
+
+footer{
+	width: 100%;
+	background: rgba(0, 0, 0,0.8);
+	color: white;
+	clear: both;
+	font-size: 1em;
+	padding: 30px;
+	text-align: right;
+}
+
+
+img.logo{
+	max-width: 150px;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 10px;
+}
+
+nav{
+	background: rgba(0,0,0,0.5);
+}
+
+nav a{
+	display: inline-block;
+	padding: 10px 50px;
+	text-decoration: none;
+	font-size: 1.5em;
+	color: white;
+}
+
+nav a:hover{
+	background: rgba(19, 116, 187,0.8);
+}
+
+.featured{
+	background: rgba(255,255,255,0.5);
+	border: 2px solid white;
+}
+
+.featured div{
+	border: 2px solid white;
+}
+
+.featured img{
+	width: 100%;
+	
+}
+
+.featured h1{
+	padding: 20px;
+	text-align: center;
+}
+
+.content{
+	min-height:500px;
+	background: white;
+}
+
+.content .left{
+	padding: 20px;
+}
+
+.content .right{
+    padding: 20px;
+}
+
+.members{
+	border: 2px solid white;
+	
+	background: white;
+}
+.members img{
+	width: 100%;	
+	border: 2px solid white;
+	opacity: 0.5;
+}
+
+.members img:hover{
+	opacity: 1;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+<header>
+<img class="logo" src="logo.png" alt="Logo" />
+<h1>International Dream Cruise</h1>
+</header>
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</nav>
+
+<section class="featured">
+<div class="column col3 one"><img src="a.jpg" alt="cruise 1" /><h1>Cruise North Pole</h1></div>
+<div class="column col3 two"><img src="a.jpg" alt="cruise 1" /><h1>Cruise Singapore</h1></div>
+<div class="column col3 three"><img src="a.jpg" alt="cruise 1" /><h1>Cruise Star</h1></div>
+</section>
+
+<section class="content">
+<div class="column col3 left">
+<h2>Book Your Cruise Holiday Now</h2>
+<p>Find your dream holiday here — where the opportunities to experience fulfilling relaxation are brimming. A cruise on Genting Dream and World Dream offers a wide slate of choices and indulgences that will be difficult to top, until you join us onboard again.</p>
+
+</div>
+<div class="column col32 right">
+<h2>Genting Dream</h2>
+<p>
+Our first ship, Genting Dream is a vessel for your dreams—it features all the comfort of authentic Asian hospitality, combined with the finest experiences from around the world.
+</p>
+
+</div>
+</section>
+
+<section class="members">
+<div class="column col4"><img src="cruise-member1.jpg" alt="" /></div>
+<div class="column col4"><img src="cruise-member2.jpg" alt="" /></div>
+<div class="column col4"><img src="cruise-member3.jpg" alt="" /></div>
+<div class="column col4"><img src="cruise-member4.jpg" alt="" /></div>
+</section>
+
+<footer>&copy; 2018</footer>
+</div>
+</body>
+</html>
